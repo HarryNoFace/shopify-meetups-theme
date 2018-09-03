@@ -1,0 +1,3 @@
+[submodule "shopify-meetup-pattern-library"]
+	path = shopify-meetup-pattern-library
+	url = https://github.com/HarryNoFace/shopify-meetup-pattern-library.git
