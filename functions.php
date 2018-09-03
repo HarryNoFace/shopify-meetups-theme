@@ -70,7 +70,7 @@ function html5blank_nav()
 		'theme_location'  => 'header-menu',
 		'menu'            => '',
 		'container'       => 'div',
-		'container_class' => 'menu-{menu slug}-container',
+		'container_class' => 'd-none d-md-inline',
 		'container_id'    => '',
 		'menu_class'      => 'menu',
 		'menu_id'         => '',
@@ -120,6 +120,9 @@ function html5blank_styles()
 
     wp_register_style('html5blank', get_template_directory_uri() . '/style.css', array(), '1.0', 'all');
     wp_enqueue_style('html5blank'); // Enqueue it!
+
+    wp_register_style('patternlibrary', get_template_directory_uri() . '/shopify-meetup-pattern-library/public/css/style.css', array(), '1.0', 'all');
+    wp_enqueue_style('patternlibrary'); // Enqueue it!
 }
 
 // Register HTML5 Blank Navigation
@@ -345,7 +348,7 @@ add_action('wp_print_scripts', 'html5blank_conditional_scripts'); // Add Conditi
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('wp_enqueue_scripts', 'html5blank_styles'); // Add Theme Stylesheet
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('init', 'create_post_type_html5'); // Add our HTML5 Blank Custom Post Type
+add_action('init', 'create_post_type_html5'); // Add our Event Type
 add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
@@ -403,18 +406,18 @@ function create_post_type_html5()
     register_post_type('html5-blank', // Register Custom Post Type
         array(
         'labels' => array(
-            'name' => __('HTML5 Blank Custom Post', 'html5blank'), // Rename these to suit
-            'singular_name' => __('HTML5 Blank Custom Post', 'html5blank'),
+            'name' => __('Event', 'html5blank'), // Rename these to suit
+            'singular_name' => __('Event', 'html5blank'),
             'add_new' => __('Add New', 'html5blank'),
-            'add_new_item' => __('Add New HTML5 Blank Custom Post', 'html5blank'),
+            'add_new_item' => __('Add New Event', 'html5blank'),
             'edit' => __('Edit', 'html5blank'),
-            'edit_item' => __('Edit HTML5 Blank Custom Post', 'html5blank'),
-            'new_item' => __('New HTML5 Blank Custom Post', 'html5blank'),
-            'view' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'view_item' => __('View HTML5 Blank Custom Post', 'html5blank'),
-            'search_items' => __('Search HTML5 Blank Custom Post', 'html5blank'),
-            'not_found' => __('No HTML5 Blank Custom Posts found', 'html5blank'),
-            'not_found_in_trash' => __('No HTML5 Blank Custom Posts found in Trash', 'html5blank')
+            'edit_item' => __('Edit Event', 'html5blank'),
+            'new_item' => __('New Event', 'html5blank'),
+            'view' => __('View Event', 'html5blank'),
+            'view_item' => __('View Event', 'html5blank'),
+            'search_items' => __('Search Event', 'html5blank'),
+            'not_found' => __('No Events found', 'html5blank'),
+            'not_found_in_trash' => __('No Events found in Trash', 'html5blank')
         ),
         'public' => true,
         'hierarchical' => true, // Allows your posts to behave like Hierarchy Pages

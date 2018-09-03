@@ -25,26 +25,20 @@
 	</head>
 	<body <?php body_class(); ?>>
 
-		<!-- wrapper -->
-		<div class="wrapper">
-
-			<!-- header -->
-			<header class="header clear" role="banner">
-
-					<!-- logo -->
-					<div class="logo">
-						<a href="<?php echo home_url(); ?>">
-							<!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->
-							<img src="<?php echo get_template_directory_uri(); ?>/img/logo.svg" alt="Logo" class="logo-img">
-						</a>
-					</div>
-					<!-- /logo -->
-
-					<!-- nav -->
-					<nav class="nav" role="navigation">
-						<?php html5blank_nav(); ?>
+	<div class="hero">
+		<div class="container text-white">
+			<div class="row">
+				<div class="col-12 d-flex mt-3">
+					<h6>Shopify</h6>
+					<nav>
+					<?php html5blank_nav(); ?>
 					</nav>
-					<!-- /nav -->
-
-			</header>
-			<!-- /header -->
+				</div>
+				<div class="col-12 col-md-6 col-lg-5">
+					<h1 class="hero__title">Shopify Meetups</h1>
+					<p class="hero__summary">Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked
+						tree. We'll send him to Washington.</p>
+				</div>
+			</div>
+		</div>
+	</div>

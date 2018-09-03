@@ -1,18 +1,51 @@
 			<!-- footer -->
 			<footer class="footer" role="contentinfo">
-
-				<!-- copyright -->
-				<p class="copyright">
-					&copy; <?php echo date('Y'); ?> Copyright <?php bloginfo('name'); ?>. <?php _e('Powered by', 'html5blank'); ?>
-					<a href="//wordpress.org" title="WordPress">WordPress</a> &amp; <a href="//html5blank.com" title="HTML5 Blank">HTML5 Blank</a>.
-				</p>
-				<!-- /copyright -->
-
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-6 col-lg-3">
+							<h3>Site Links</h3>
+							<ul>
+								<a href="#"><li>Homepage</li></a>
+								<a href="#"><li>Events</li></a>
+								<a href="#"><li>Updates</li></a>
+								<a href="#"><li>Contact</li></a>
+								<a href="#"><li>About</li></a>
+							</ul>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							<h3>Latest Events</h3>
+							<ul>
+								<a href="#"><li>Shopify meetup Reading</li></a>
+								<a href="#"><li>Shopify meetup Hampshire</li></a>
+								<a href="#"><li>Shopify meetup Basingstoke</li></a>
+								<a href="#"><li>Shopify meetup Portsmouth</li></a>
+							</ul>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							<h3>latest News</h3>
+							<ul>
+								<a href="#"><li>Shopify meetup Reading</li></a>
+								<a href="#"><li>Shopify meetup Hampshire</li></a>
+								<a href="#"><li>Shopify meetup Basingstoke</li></a>
+								<a href="#"><li>Shopify meetup Portsmouth</li></a>
+							</ul>
+						</div>
+						<div class="col-12 col-md-6 col-lg-3">
+							<h3>We're Social</h3>
+							<ul>
+								<a href="#"><li>Twitter Page</li></a>
+								<a href="#"><li>Linkedin Page</li></a>
+								<a href="#"><li>Facebook Page</li></a>
+								<a href="#"><li>EventBrite Page</li></a>
+							</ul>
+						</div>
+						<div class="col-12 mt-3">
+							<h3 class="title--h3">Made by the folks at <a href="#">Noface</a></h3>
+						</div>
+					</div>
+				</div>
 			</footer>
 			<!-- /footer -->
-
-		</div>
-		<!-- /wrapper -->
 
 		<?php wp_footer(); ?>
 
