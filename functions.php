@@ -31,7 +31,6 @@ if (function_exists('add_theme_support'))
     add_image_size('medium', 250, '', true); // Medium Thumbnail
     add_image_size('small', 120, '', true); // Small Thumbnail
     add_image_size('custom-size', 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
-
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use
     /*add_theme_support('custom-background', array(
 	'default-color' => 'FFF',
@@ -68,7 +67,7 @@ function html5blank_nav()
 	wp_nav_menu(
 	array(
 		'theme_location'  => 'header-menu',
-		'menu'            => '',
+		'menu'            => 'Header Menu',
 		'container'       => 'div',
 		'container_class' => 'd-none d-md-inline',
 		'container_id'    => '',
@@ -80,7 +79,7 @@ function html5blank_nav()
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<ul>%3$s</ul>',
+		'items_wrap'      => '<ul class="d-none d-md-inline">%3$s</ul>',
 		'depth'           => 0,
 		'walker'          => ''
 		)
@@ -230,7 +229,7 @@ function html5wp_index($length) // Create 20 Word Callback for Index page Excerp
 // Create 40 Word Callback for Custom Post Excerpts, call using html5wp_excerpt('html5wp_custom_post');
 function html5wp_custom_post($length)
 {
-    return 40;
+    return 60;
 }
 
 // Create the Custom Excerpts callback

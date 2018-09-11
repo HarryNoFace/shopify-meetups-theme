@@ -31,11 +31,11 @@
 				<div class="col-12 d-flex mt-3">
 					<h6>Shopify</h6>
 					<nav>
-					<?php html5blank_nav(); ?>
+						<?php html5blank_nav(); ?>
 					</nav>
 				</div>
 				<div class="col-12 col-md-6 col-lg-5">
-					<h1 class="hero__title">Shopify Meetups</h1>
+					<h1 class="hero__title"><?php the_title(); ?></h1>
 					<p class="hero__summary">Let your heart be your guide. You can do anything here. So don't worry about it. That's a crooked
 						tree. We'll send him to Washington.</p>
 				</div>
